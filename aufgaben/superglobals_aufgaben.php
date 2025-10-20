@@ -58,5 +58,25 @@ erkennt, ob der Benutzer Google Chrome, Firefox oder Edge verwendet, und den erk
     if (str_contains($_SERVER['HTTP_USER_AGENT'], 'Mozilla')) {echo "Browser ist Firefox.";}
 ?>
 
+<h2>"User Agent" - als Browserweiche geeignet?</h2>
+Eine Browserweiche ist eine Technik, mit der unterschiedlicher HTML-, CSS- oder JavaScript-Code an verschiedene
+Webbrowser ausgeliefert wird, um deren unterschiedliche Fähigkeiten zu berücksichtigen. Recherchieren Sie im Web, ob der
+User Agent-Header heutzutage noch das bevorzugte Mittel für die Implementierung von Browserweichen ist. Berücksichtigen
+Sie dabei aktuelle Alternativen und bewerten Sie deren Vor- und Nachteile im Vergleich zur Erkennung des User Agents.<br><br>
+
+Gemini
+<p>
+    Der User-Agent (UA) Header ist heutzutage nicht mehr das bevorzugte Mittel zur Implementierung von Browserweichen (Browser Sniffing).
+    Die Webentwicklungs-Community betrachtet die User-Agent-Erkennung als unzuverlässige und schlechte Praxis.
+    Stattdessen wird die Funktionserkennung (Feature Detection) als aktueller Standard und Best Practice empfohlen.<br><br>
+</p>
+ChatGPT
+<p>
+    Kurzfassung: Nein—der klassische User-Agent-Header (UA) ist heute nicht das bevorzugte Mittel für Browserweichen.
+    Best Practice ist Feature Detection (Progressive Enhancement) und – falls wirklich agent-spezifische Serverlogik
+    nötig ist – User-Agent Client Hints (UA-CH) als moderner, strukturierter Ersatz. UA-Sniffing gilt als fehleranfällig
+    und wird zusätzlich durch die User-Agent-Reduction in Chrome ausgehöhlt.
+</p>
+
 </body>
 </html>
