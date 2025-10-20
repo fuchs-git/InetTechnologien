@@ -28,27 +28,35 @@ Das Skript soll:
 Verwenden Sie die Superglobals $_SERVER, $_GET und $_POST
 <h3>Informationen</h3>
 <?php
-echo
-"IP-Adresse vom Benutzer/Client: {$_SERVER['REMOTE_ADDR']}<br>
-         Angefragte URL: {$_SERVER['REQUEST_SCHEME']}://{$_SERVER['SERVER_NAME']}{$_SERVER['REQUEST_URI']}<br>
-         Request-Methode: {$_SERVER['REQUEST_METHOD']}<br>";
-if (isset($_GET['username'])) echo "GET-Parameter['username']: {$_GET['username']}<br>";
-else echo "Kein Benutzername übergeben<br>";
-?>
+    echo
+    "IP-Adresse vom Benutzer/Client: {$_SERVER['REMOTE_ADDR']}<br>
+             Angefragte URL: {$_SERVER['REQUEST_SCHEME']}://{$_SERVER['SERVER_NAME']}{$_SERVER['REQUEST_URI']}<br>
+             Request-Methode: {$_SERVER['REQUEST_METHOD']}<br>";
+    if (isset($_GET['username']))
+        echo "GET-Parameter['username']: {$_GET['username']}<br>";
+    else echo "Kein Benutzername übergeben<br>";
 
-<?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    print_r($_POST);
-}
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        print_r($_POST);
+    }
 ?>
 
 <!-- curl Befehle
 # Post Request
 curl --request POST --data 'hello world' localhost/InetTechnologien/aufgaben/superglobals_aufgaben.php
-
 -->
+
+<h2>"User Agent" - auslesen</h2>
+Ein Webbrowser sendet bei jeder Anfrage an den Webserver eine Kennung im sogenannten User Agent-Header mit. Diese
+Kennung gibt Auskunft darüber, welchen Browser der Benutzer verwendet. Schreiben Sie ein PHP-Skript, das beim Aufruf
+erkennt, ob der Benutzer Google Chrome, Firefox oder Edge verwendet, und den erkannten Browsernamen auf der Seite ausgibt.
+
+<h3>User Agent</h3>
+<?php
+    echo "User Agent: {$_SERVER['HTTP_USER_AGENT']}<br>";
+    if (str_contains($_SERVER['HTTP_USER_AGENT'], 'Chrome')) {echo "Browser ist Google Chrome.";}
+    if (str_contains($_SERVER['HTTP_USER_AGENT'], 'Mozilla')) {echo "Browser ist Firefox.";}
+?>
+
 </body>
 </html>
-<?php
-
-?>
