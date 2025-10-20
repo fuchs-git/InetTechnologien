@@ -1,15 +1,15 @@
-// <?php
-//    $auto_arr['Audi A4'] = ['Halter' => 'Alfred Maier', 'Leistung' => 180, 'Übernahmejahr' => '2023', 'Farbe' => 'schwarz'];
-//    $auto_arr['VW Käfer'] = ['Halter' => 'Ingrid Maier', 'Leistung' => 110,'Übernahmejahr' => '2019', 'Farbe' => 'gelb'];
-//    $auto_arr['VW up!'] = ['Halter' => 'Lisa Maier', 'Leistung' => 90,'Übernahmejahr' => '2025', 'Farbe' => 'rot'];
-// ?>
+<?php
+   $auto_arr['Audi A4'] = ['Halter' => 'Alfred Maier', 'Leistung' => 180, 'Übernahmejahr' => '2023', 'Farbe' => 'schwarz'];
+   $auto_arr['VW Käfer'] = ['Halter' => 'Ingrid Maier', 'Leistung' => 110,'Übernahmejahr' => '2019', 'Farbe' => 'gelb'];
+   $auto_arr['VW up!'] = ['Halter' => 'Lisa Maier', 'Leistung' => 90,'Übernahmejahr' => '2025', 'Farbe' => 'rot'];
+?>
 
 
 <?php
-    $auto_arr['Alfred Maier'] = ['Marke' => 'Audi','Modell' => 'A4', 'Leistung' => 180, 'Übernahmejahr' => '2023', 'Farbe' => 'schwarz'];
-    $auto_arr['Ingrid Maier'] = ['marke' => 'VW','Modell' => 'Käfer', 'Leistung' => 110,'Übernahmejahr' => '2019', 'Farbe' => 'gelb'];
-    $auto_arr['Lisa Maier'] = ['Marke' => 'VW','Modell' => 'up!', 'Leistung' => 90,'Übernahmejahr' => '2025', 'Farbe' => 'rot'];
-?>
+//    $auto_arr['Alfred Maier'] = ['Marke' => 'Audi','Modell' => 'A4', 'Leistung' => 180, 'Übernahmejahr' => '2023', 'Farbe' => 'schwarz'];
+//    $auto_arr['Ingrid Maier'] = ['marke' => 'VW','Modell' => 'Käfer', 'Leistung' => 110,'Übernahmejahr' => '2019', 'Farbe' => 'gelb'];
+//    $auto_arr['Lisa Maier'] = ['Marke' => 'VW','Modell' => 'up!', 'Leistung' => 90,'Übernahmejahr' => '2025', 'Farbe' => 'rot'];
+//?>
 
 <!doctype html>
 <html lang="de">
