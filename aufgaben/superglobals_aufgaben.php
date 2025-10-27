@@ -54,8 +54,12 @@ erkennt, ob der Benutzer Google Chrome, Firefox oder Edge verwendet, und den erk
 <h3>User Agent</h3>
 <?php
     echo "User Agent: {$_SERVER['HTTP_USER_AGENT']}<br>";
+    echo "<pre>";
+    print_r($_SERVER);
+    echo "</pre>";
     if (str_contains($_SERVER['HTTP_USER_AGENT'], 'Chrome')) {echo "Browser ist Google Chrome.";}
     if (str_contains($_SERVER['HTTP_USER_AGENT'], 'Mozilla')) {echo "Browser ist Firefox.";}
+    if (str_contains($_SERVER['HTTP_USER_AGENT'], 'Apple')) {echo "Browser ist Safari.";}
 ?>
 
 <h2>"User Agent" - als Browserweiche geeignet?</h2>
