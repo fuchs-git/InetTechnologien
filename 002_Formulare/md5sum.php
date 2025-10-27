@@ -4,7 +4,7 @@
 
 
 <!doctype html>
-<html lang="de">
+<html lang="de" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -25,7 +25,7 @@ $text = $_GET['ausgangstext'] ?? '';
 ?>
 
 <form>
-    <textarea name="ausgangstext" cols="40" rows="10"><?= $text ?></textarea>
+    <textarea> name="ausgangstext" cols="40" rows="10"><?= $text ?></textarea>
     <br>
     <button type="submit">MD5-Hashwert berechnen</button>
 </form>
@@ -37,5 +37,9 @@ if ($text) {
 }
 ?>
 
+<p>Praxisteil - XSS Angriff<br>
+    Entfernen Sie im obigen Beispiel zur Berechnung des MD5-Hashwertes die Funktion htmlspecialchars() und geben Sie im
+    Textfeld eine Zeichenkette ein, die JavaScript ausführt und ein alert() auslöst.</p>
+<?= htmlspecialchars("text</textarea><script>alert(1)</script>") ?>
 </body>
 </html>
