@@ -20,7 +20,7 @@ $text = $_GET['ausgangstext'] ?? '';
 ?>
 
 <form>
-    <textarea> name="ausgangstext" cols="40" rows="10"><?= $text ?></textarea>
+    <textarea name="ausgangstext" cols="40" rows="10"><?= $text ?></textarea>
     <br>
     <button type="submit">MD5-Hashwert berechnen</button>
 </form>
