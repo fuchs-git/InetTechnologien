@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Marvel Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<h1>Marvel Quiz</h1>
+
+<form action="auswertung.php" method="post">
+
+    <!-- Frage 1 -->
+    <div class="frage-block">
+        <p><strong>1. Welche dieser Figuren gehört zu den Avengers?</strong></p>
+
+        <label><input type="radio" name="frage1" value="Batman">Batman</label><br>
+        <label><input type="radio" name="frage1" value="Iron Man">Iron Man</label><br>
+        <label><input type="radio" name="frage1" value="Superman">Superman</label>
+        <p id="v1"></p>
+    </div>
+
+    <!-- Frage 2 -->
+    <div class="frage-block">
+        <p><strong>2. Welcher Infinity-Stein kontrolliert die Zeit?</strong></p>
+
+        <label><input type="radio" name="frage2" value="Gedankenstein">Gedankenstein</label><br>
+        <label><input type="radio" name="frage2" value="Realitätsstein">Realitätsstein</label><br>
+        <label><input type="radio" name="frage2" value="Zeitstein">Zeitstein</label>
+        <p id="v2"></p>
+    </div>
+
+    <!-- Frage 3 -->
+    <div class="frage-block">
+        <p><strong>3. Wer ist im ersten „Guardians of the Galaxy“-Film der Anführer des Teams?</strong></p>
+
+        <label><input type="radio" name="frage3" value="Rocket Raccoon">Rocket Raccoon</label><br>
+        <label><input type="radio" name="frage3" value="Peter Quill">Peter Quill / Star-Lord</label><br>
+        <label><input type="radio" name="frage3" value="Drax">Drax der Zerstörer</label>
+        <p id="v3"></p>
+    </div>
+
+    <button type="submit">Absenden</button>
+
+</form>
+</body>
+</html>
