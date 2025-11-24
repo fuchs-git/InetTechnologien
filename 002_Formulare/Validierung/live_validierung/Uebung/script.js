@@ -1,10 +1,5 @@
 'use strict'
 
-// Fragen
-let frage1 = document.getElementById("frage1");
-let frage2 = document.getElementById("frage2");
-let frage3 = document.getElementById("frage3");
-
 document.querySelectorAll('input[name="frage1"]').forEach(radio => {
     radio.addEventListener('change', evt => {
         let val = evt.target.value;
