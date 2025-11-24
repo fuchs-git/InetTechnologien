@@ -1,0 +1,54 @@
+body {
+    width: 1100px;
+    margin: auto;
+}
+
+body>header {
+    background-color: rgba(0,0,0,0.05);
+    padding: 1em 0 0 5px;
+    border-bottom: 1px solid black;
+    height: 100px;
+}
+
+body>header * {
+    margin: 0;
+}
+
+body>nav {
+    border-bottom: 1px solid black;
+}
+
+body>nav ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+    list-style: none;
+}
+
+body>nav ul li {
+    width: 25%;
+    text-align: center;
+}
+
+body>nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+body>nav ul li:hover a {
+    font-weight: bold;
+}
+
+.active {
+    color: red;
+}
+
+main {
+    width: 1000px;
+    margin: auto;
+    padding: 2em 0;
+}
+
+footer {
+    border-top: 1px solid black;
+}
