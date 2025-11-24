@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+
+<h1>Login für die beste Seite der Welt!</h1>
+
+<h2>Login</h2>
+<form method="post" action="login.php?type=login">
+    <input type="text" name="name" placeholder="Name"><br>
+    <input type="password" name="password" placeholder="password"><br>
+    <button type="submit">login</button>
+</form>
+
+<br>
+<br>
+<details>
+    <summary>Registrierung</summary>
+<form method="post" action="login.php?type=register">
+    <input type="text" name="name" placeholder="Name"><br>
+    <input type="text" name="email" placeholder="E-Mail"><br>
+    <input type="password" name="password" placeholder="password"><br>
+    <input type="password" name="password" placeholder="password wiederholen"><br>
+    <button type="submit">register</button>
+</form>
+</details>
+
+
+
+</body>
+</html>
