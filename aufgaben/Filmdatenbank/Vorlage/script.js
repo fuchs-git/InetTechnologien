@@ -18,8 +18,8 @@ jahr.addEventListener('input', evt => {
     if (!num_regex.test(jahr.value)) {
         document.getElementById('jahrError').innerHTML = "Keine gültige Zahl!";
     }
-    if (jahr.value < 1000 || jahr.value > 2025) {
-        document.getElementById('jahrError').innerHTML = "Keine gültiger Zahlenbereich";
+    if (jahr.value < 1900 || jahr.value > 2100) {
+        jahr.style.border = '2px solid red';
     }
     if (jahr.value === "") {document.getElementById('jahrError').innerHTML = "";}
 })
