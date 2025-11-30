@@ -1,0 +1,5 @@
+Wie lange mussten Sie warten, bis Sie von einem Mitarbeiter angesprochen wurden?;;Weniger als 1 Minute, 1 - 5 Minuten, 5 - 10 Minuten, Länger als 10 Minuten
+Der Mitarbeiter war freundlich;;stimme voll zu,stimme zu,50:50,stimme nicht zu,stimme absolut nicht zu
+Der Mitarbeiter hatte das nötige Wissen um mir zu helfen;;stimme voll zu,stimme zu,50:50,stimme nicht zu,stimme absolut nicht zu
+Der Mitarbeiter hat mir aufmerksam zugehört;;stimme voll zu,stimme zu,50:50,stimme nicht zu,stimme absolut nicht zu
+Konnte der Mitarbeiter Ihr Problem lösen?;;Ja,Nein
