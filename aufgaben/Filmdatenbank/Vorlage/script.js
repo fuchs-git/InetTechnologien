@@ -1,7 +1,7 @@
 'use strict';
 let num_regex = /^\d+$/
-
-
+let zeichen_regex = /[äüöÄÜÖß]/
+let email_regx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 let titel = document.getElementById('titel');
 titel.addEventListener('input', evt => {
