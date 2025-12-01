@@ -14,6 +14,7 @@ titel.addEventListener('input', evt => {
 
 let jahr = document.getElementById('jahr');
 jahr.addEventListener('input', evt => {
+    jahr.style.border = '1px solid black';
     document.getElementById('jahrError').innerHTML = "";
     if (!num_regex.test(jahr.value)) {
         document.getElementById('jahrError').innerHTML = "Keine gültige Zahl!";

@@ -11,7 +11,7 @@ if (isset($_POST["gesehen"])){
 
 $text = "\n$titel#$erscheinungsjahr#$dauer#$genre#$gesehen";
 file_put_contents("filme.txt", $text, FILE_APPEND);
-//header("Location: index.php");
+header("Location: index.php");
 
 //  Filme mit Arrays
 $rohdaten = [
@@ -49,6 +49,4 @@ $filme[$neuerTitel] = [
     "genre" => $neuesGenre,
     "gesehen" => ($neuGesehen === "+") ? 1 : 0
 ];
-
-
 ?>

@@ -17,5 +17,5 @@ $seiten = ['zuckerwerk', 'eis', 'kuchen', 'geschäft', 'unternehmen'];
                 }
             }
         ?>
-</ul>
+    </ul>
 </nav>

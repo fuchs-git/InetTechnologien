@@ -27,6 +27,7 @@ foreach ($filedata as $line) {
     echo "</tr>";
 }
 echo "</div>";
+
 ?>
 
 <div style="margin-bottom: 30px">

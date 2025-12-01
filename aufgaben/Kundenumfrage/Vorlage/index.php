@@ -5,7 +5,6 @@
     <title>Kundenservice</title>
 </head>
 <body>
-<header>
     <?php
     echo "<pre>";
     print_r($_GET);
@@ -52,8 +51,6 @@
         echo "<h2>UMF- Wir führen im Auftrag von Unternehmen  Umfragen durch</h2>";
     }
     ?>
-</header>
-
 
 </body>
 </html
