@@ -2,5 +2,9 @@ Love Story#1970#100#Liebesfilm#-
 Matrix #1999#136#Science-Fiction#+
 Matrix Reloaded#2003#138#Science-Fiction#+
 Matrix Revolutions#2003#129#Science-Fiction#-
+Titanic#2100#90#Liebesfilm#+
+####-
+Titanic#1#90#Liebesfilm#+
+Minions#2005#120#Komoedie#+
 Minions2#2023#90#Komoedie#+
 Irgendwas#2025##90#Drama#-
