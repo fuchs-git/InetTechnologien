@@ -50,6 +50,8 @@ echo "</div>";
         <input type="submit" value="eintragen">
 
     </form>
+
+
 </div>
 </body>
 </html>
