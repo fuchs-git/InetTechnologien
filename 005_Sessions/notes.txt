@@ -1,0 +1,11 @@
+# Session
+- Session merkt sich der Browser
+- Cookie der PC
+
+Variable: $_SESSION
+
+Als erstes:
+<?php
+session_name('Session-Name');
+session_start();
+>
