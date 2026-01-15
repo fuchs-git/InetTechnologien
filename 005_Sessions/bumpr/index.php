@@ -18,30 +18,22 @@ else {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <div>
-        <h1>bumpr</h1>
-    </div>
-</header>
+<?php
+include './header.php';
+?>
 <main>
-<form action="" method="post">
-    <input type="text" name="username" id="username" placeholder="Benutzername"><br>
-    <input type="password" name="password" id="password" placeholder="Password"><br>
-    <input type="submit" value="Anmelden">
-</form>
+    <?php
+    if (isset($_SESSION['auth'])) {
+        include './intern.php';
+    }
+    else {
+        include './anmeldeformular.php';
+    }
+    ?>
 </main>
 
 <footer>
-    <form action="logout.php">
-        <input type="submit" value="Session beenden">
-    </form>
 
-    <pre>
-    <?php
-    print_r($_SESSION);
-    #print_r($_SERVER);
-    ?>
-    </pre>
 </footer>
 
 </body>
