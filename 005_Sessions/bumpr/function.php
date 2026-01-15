@@ -7,7 +7,6 @@ $password = trim(htmlspecialchars($_POST['password']));
     $creds = file("users.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     foreach($creds as $line) {
         [$user, $pass] = explode(":", $line, 2);
-        echo "$user : $pass <br>";
         if ($username == $user && md5($password) == $pass) {
             $_SESSION['user'] = $username;
             $_SESSION['auth'] = true;

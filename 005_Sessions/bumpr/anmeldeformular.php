@@ -7,4 +7,3 @@ session_start();
     <input type="password" name="password" id="password" placeholder="Password"><br>
     <input type="submit" value="Anmelden">
 </form>
-
