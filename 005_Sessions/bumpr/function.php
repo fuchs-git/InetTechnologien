@@ -3,6 +3,7 @@ session_name('bumpr');
 session_start();
 $username = trim(htmlspecialchars($_POST['username']));
 $password = trim(htmlspecialchars($_POST['password']));
+$_SESSION['auth'] = false;
 
     $creds = file("users.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
     foreach($creds as $line) {

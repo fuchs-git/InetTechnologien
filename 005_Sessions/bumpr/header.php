@@ -2,6 +2,7 @@
 session_name('bumpr');
 session_start();
 ?>
+
 <header>
 <div class="logo"><h1>bumper</h1></div>
 <div class="nutzer">

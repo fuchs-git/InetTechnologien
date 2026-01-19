@@ -1,15 +1,3 @@
-<?php
-session_name('bumpr');
-session_start();
-
-if (!isset($_SESSION['lustig'])) {
-    $_SESSION['lustig'] = 'Ein Witz!';
-}
-else {
-    $_SESSION['lustig'] = 'Ein anderer Witz! ' . random_int(0, 100);
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +11,7 @@ include './header.php';
 ?>
 <main>
     <?php
-    if (isset($_SESSION['auth'])) {
+    if (isset($_SESSION['auth']) && $_SESSION['auth'] === true) {
         include './intern.php';
     }
     else {
