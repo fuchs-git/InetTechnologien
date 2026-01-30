@@ -7,10 +7,23 @@ session_start();
 <div class="logo">
     ACL Quiz
 </div>
+    <?php
+    if ($_SESSION['auth']) {
+        echo <<<END
+<div class="menu">
+    <a href="index.php">Home</a>
+    <a href="logout.php">Logout</a>
+</div>
+END;
+    }
+    else {
+        echo <<<END
 <div class="menu">
     <a href="index.php">Home</a>
     <a href="login.php">Login</a>
     <a href="register.php">Register</a>
-    <a href="logout.php">Logout</a>
 </div>
+END;
+    }
+    ?>
 </nav>
