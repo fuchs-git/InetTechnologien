@@ -1,0 +1,3 @@
+Alice;$2y$12$kuAT8uYvBB1y0/dWL8sMOuBtjZ29bksLJNO2ixTvbT.tuBN.TmuLu
+Bob;$2y$12$yHzTnF75tck6600SWSytruyQYD2Be2MyNVVboo.xLi3ZRxb0vct/e
+Evil;$2y$12$LR/BWx6W8PjH.4pWvql5eu1MXvjRlLH/Omj9S7TDYHmfDuCPAQyAW

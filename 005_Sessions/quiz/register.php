@@ -13,6 +13,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $line = $name . ';' . $pass_hash . PHP_EOL;
 
         file_put_contents("users.txt", $line, FILE_APPEND);
+        $_SESSION["auth"] = true;
+        header("Location: index.php");
     }
     else {
         $name = trim($_POST["name"]);
@@ -33,9 +35,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="submit" name="submit" id="submit" value="Registrieren">
     </form>
 </div>
-
-<?php
-
-    print_r($pass);
-?>
 </body>

@@ -6,7 +6,8 @@
 </head>
 <body>
 <?php
-require("nav.php")
+require("nav.php");
+echo $_SESSION["auth"];
 ?>
 </body>
 </html>
