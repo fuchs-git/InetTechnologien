@@ -57,3 +57,17 @@ body div {
     justify-content: center;
     align-items: center;
 }
+
+body > article {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: larger;
+    text-align: center;
+    align-self: center;
+}
+
+img {
+    display: block;
+    width: 30%;
+    height: 30%;
+}
