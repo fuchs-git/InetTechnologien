@@ -10,10 +10,15 @@
 require("nav.php");
 if ($_SESSION['auth']){
     echo <<<END
-<div>
-<img src="img/Beginner.png">
-<img src="img/Medium.png">
-<img src="img/Expert.png"></div>
+<div id="tabelle">
+<table>
+<tr>
+<td><img src="img/Beginner.png">\nBeginner</td>
+<td><img src="img/Medium.png">\nMedium</td>
+<td><img src="img/Expert.png">\nWell done!</tr>
+</tr>
+</table>
+</div>
 END;
 
 

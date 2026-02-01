@@ -1,0 +1,5 @@
+1;rb;Was bedeutet ACL ausgeschrieben?;Access Control List;Advanced Cyber Login;Active Connection Loop;Automatic Code Loader;1
+2;rb;Wofür wird eine ACL hauptsächlich verwendet?;Zugriff steuern;Passwörter speichern;Computer schneller machen;Internet reparieren;1
+3;rb;Kann eine ACL Netzwerkverkehr erlauben oder blockieren?;Ja;Nein;Nur nachts;Nur mit WLAN;1
+4;rb;Auf welchem Gerät werden ACLs häufig eingesetzt?;Router;Monitor;Tastatur;Drucker;1
+5;cb;Was kann eine ACL filtern?;IP-Adressen;Ports;Bildschirmauflösung;CPU-Temperatur;1,2

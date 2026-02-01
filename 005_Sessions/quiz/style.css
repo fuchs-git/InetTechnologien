@@ -71,3 +71,27 @@ img {
     width: 30%;
     height: 30%;
 }
+
+table td {
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center; /* Horizontal */
+    align-items: center;     /* Vertikal */
+    height: 80%;
+}
+
+table td img {
+    padding-top: 10%;
+    height: 100%;
+    width: 100%;
+}
+
+#tabelle > table > tbody > tr {
+    text-align: center;
+    font-weight: bold;
+}
+
+.frage {
+    justify-content: center;
+    align-items: center;
+}
