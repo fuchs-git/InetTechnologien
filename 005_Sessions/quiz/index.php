@@ -8,14 +8,14 @@
 <body>
 <?php
 require("nav.php");
-if ($_SESSION['auth']){
+if (isset($_SESSION['auth'])){
     echo <<<END
 <div id="tabelle">
 <table>
 <tr>
-<td><img src="img/Beginner.png">\nBeginner</td>
-<td><img src="img/Medium.png">\nMedium</td>
-<td><img src="img/Expert.png">\nWell done!</tr>
+<td><a href="beginner.php"><img src="img/Beginner.png"></a>\nBeginner</td>
+<td><a href="medium.php"><img src="img/Medium.png"></a>\nMedium</td>
+<td><a href="welldone.php"><img src="img/Expert.png"></a>\nWell done!</tr>
 </tr>
 </table>
 </div>

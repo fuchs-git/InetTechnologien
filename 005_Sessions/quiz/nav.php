@@ -8,7 +8,7 @@ session_start();
     ACL Quiz
 </div>
     <?php
-    if ($_SESSION['auth']) {
+    if (isset($_SESSION['auth'])) {
         echo <<<END
 <div class="menu">
     <a href="index.php">Home</a>

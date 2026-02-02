@@ -17,13 +17,14 @@ foreach ($fragen as $line) {
     foreach ($fragen as $line) {
         [$nr, $type, $frage, $opt1, $opt2, $opt3, $opt4, $correct] = explode(";", $line, 8);
            if ((int)$nr == $akt_frage) {
-               echo "<h1>$frage</h1>\n";
+               echo "<h1>$frage</h1><div>\n";
                echo "<form method='post'>";
                if ($type == 'rb'){
                    for ($i = 0; $i < 4; $i++) {
                        echo "<input type='radio' name='opt1' value='$i'>$options[$i]<br>";
 
                    }
+                   echo "</div>";
 
                }
            }

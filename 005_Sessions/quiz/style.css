@@ -95,3 +95,7 @@ table td img {
     justify-content: center;
     align-items: center;
 }
+
+/*#tabelle > table > tbody > tr > a {*/
+/*    text-decoration: none;*/
+/*}*/

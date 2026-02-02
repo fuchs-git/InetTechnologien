@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>bumpr</title>
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
