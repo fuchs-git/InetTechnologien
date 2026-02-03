@@ -48,6 +48,7 @@ body {
 
 body div {
     display: flex;
+
     justify-content: center;
     align-items: center;
 }
@@ -92,6 +93,8 @@ table td img {
 }
 
 .frage {
+    padding-top: 5%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -99,3 +102,200 @@ table td img {
 /*#tabelle > table > tbody > tr > a {*/
 /*    text-decoration: none;*/
 /*}*/
+
+/* ===== Highscore UI ===== */
+.hs-wrap {
+    min-height: calc(100vh - 70px); /* nav = 70px */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 16px;
+}
+
+.hs-card {
+    width: 100%;
+    max-width: 900px;
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    padding: 22px;
+}
+
+.hs-head {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.hs-title {
+    font-size: 34px;
+    line-height: 1.1;
+}
+
+.hs-subtitle {
+    color: #666;
+    font-size: 14px;
+}
+
+.hs-tabs {
+    display: flex;
+    gap: 10px;
+    margin: 14px 0 18px 0;
+    flex-wrap: wrap;
+}
+
+.hs-tab {
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #d7d7d7;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: #f7f7f7;
+    transition: transform 0.06s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.hs-tab:hover {
+    background: #efefef;
+    border-color: #bfbfbf;
+    transform: translateY(-1px);
+}
+
+.hs-tab.active {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.hs-empty {
+    padding: 18px;
+    border: 1px dashed #d0d0d0;
+    border-radius: 12px;
+    background: #fafafa;
+    color: #444;
+}
+
+.hs-table-wrap {
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid #e6e6e6;
+}
+
+.hs-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 620px;
+}
+
+.hs-table thead th {
+    text-align: left;
+    background: #0b0b0b;
+    color: #fff;
+    padding: 12px 14px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.hs-table tbody td {
+    padding: 12px 14px;
+    border-top: 1px solid #ededed;
+    font-size: 14px;
+}
+
+.hs-table tbody tr:nth-child(odd) {
+    background: #fcfcfc;
+}
+
+.hs-table tbody tr:hover {
+    background: #f2f2f2;
+}
+
+.col-rank {
+    width: 70px;
+    text-align: center;
+}
+
+.col-score {
+    width: 140px;
+    text-align: right;
+}
+
+.col-date {
+    width: 190px;
+    white-space: nowrap;
+    color: #555;
+}
+
+.hs-rank {
+    display: inline-flex;
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    font-weight: 800;
+}
+
+.hs-user {
+    font-weight: 600;
+}
+
+.hs-score {
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.hs-total {
+    color: #666;
+    margin-left: 4px;
+}
+
+.hs-foot {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hs-btn {
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    transition: transform 0.06s ease, opacity 0.15s ease;
+}
+
+.hs-btn:hover {
+    opacity: 0.92;
+    transform: translateY(-1px);
+}
+
+/* Mobile tweaks */
+@media (max-width: 520px) {
+    .hs-card { padding: 16px; }
+    .hs-title { font-size: 28px; }
+}
+
+/* ===== FIX: Highscore darf NICHT durch body div { display:flex } zerstört werden ===== */
+.hs-wrap { display: flex !important; justify-content: center !important; align-items: flex-start !important; }
+.hs-card { display: block !important; }
+
+.hs-card div,
+.hs-card table,
+.hs-card thead,
+.hs-card tbody,
+.hs-card tr,
+.hs-card th,
+.hs-card td {
+    display: revert !important;
+    justify-content: initial !important;
+    align-items: initial !important;
+}
+
+/* Tabelle sauber */
+.hs-table { width: 100%; border-collapse: collapse; }
+.hs-table th, .hs-table td { padding: 12px 14px; }
+

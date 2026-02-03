@@ -1,0 +1,8 @@
+1;rb;Welche Aussage beschreibt eine Named ACL korrekt?;Sie hat einen Namen statt nur eine Nummer;Sie funktioniert nur auf Switches;Sie ist immer Standard-ACL;Sie ist nur für IPv6;1
+2;rb;Wofür werden Sequence Numbers in Named ACLs hauptsächlich genutzt?;Einträge gezielt einfügen/löschen ohne alles neu zu schreiben;Mehr Performance beim Routing;Verschlüsselung der Regeln;Automatische NAT-Regeln;1
+3;rb;Was bedeutet "implicit deny" bei ACLs?;Alles was nicht matcht wird verworfen;Alles was nicht matcht wird erlaubt;Nur TCP wird verworfen;Nur ICMP wird erlaubt;1
+4;rb;Welche Wildcard-Maske nutzt man für einen einzelnen Host?;0.0.0.0;0.0.0.127;0.0.0.255;255.255.255.255;1
+5;rb;Welche Aussage zu "established" (TCP) in Extended ACLs trifft zu?;Erlaubt Rückverkehr von TCP-Verbindungen (ACK/RST gesetzt);Erlaubt nur UDP;Erlaubt nur ICMP;Erlaubt nur SYN;1
+6;rb;Welche Option ist typisch, um ACL-Treffer zu protokollieren?;log;debug;trace;mirror;1
+7;cb;Welche typischen Fehlerquellen führen zu „ACL wirkt nicht wie gedacht“?;Falsche Richtung (in/out);Falsche Platzierung (Standard/Extended);Reihenfolge der Einträge;Fehlendes explizites permit vor implicit deny;1,2,3,4
+8;rb;Welche Aussage zur Kombination mehrerer ACL-Typen ist korrekt?;Pro Protokoll (z.B. IPv4/IPv6) kann je Interface jeweils eine In- und Out-ACL aktiv sein;Man kann beliebig viele Inbound-ACLs stapeln;Man kann nur Outbound ACLs konfigurieren;ACLs funktionieren nur auf Loopbacks;1

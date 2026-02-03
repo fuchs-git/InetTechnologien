@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         file_put_contents("users.txt", $line, FILE_APPEND);
         $_SESSION["auth"] = true;
+        $_SESSION["name"] = $name;
         header("Location: index.php");
     }
     else {

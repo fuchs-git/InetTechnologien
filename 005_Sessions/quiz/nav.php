@@ -12,6 +12,7 @@ session_start();
         echo <<<END
 <div class="menu">
     <a href="index.php">Home</a>
+    <a href="highscore.php">Scoreboard</a>
     <a href="logout.php">Logout</a>
 </div>
 END;
@@ -20,6 +21,7 @@ END;
         echo <<<END
 <div class="menu">
     <a href="index.php">Home</a>
+    <a href="highscore.php">Scoreboard</a>
     <a href="login.php">Login</a>
     <a href="register.php">Register</a>
 </div>

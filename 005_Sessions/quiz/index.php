@@ -15,7 +15,7 @@ if (isset($_SESSION['auth'])){
 <tr>
 <td><a href="beginner.php"><img src="img/Beginner.png"></a>\nBeginner</td>
 <td><a href="medium.php"><img src="img/Medium.png"></a>\nMedium</td>
-<td><a href="welldone.php"><img src="img/Expert.png"></a>\nWell done!</tr>
+<td><a href="expert.php"><img src="img/Expert.png"></a>\nExpert</tr>
 </tr>
 </table>
 </div>
@@ -31,7 +31,7 @@ bis die erste Regel plötzlich alles blockiert. Oder nichts. Oder beides.<br>
 <br>
 <h2>Achtung Korrekturfaktor:</h2>
 Als unangemeldeter Nutzer kannst du das Quiz leider nicht durchführen.
-Melden dich an, um dein Wissen zu testen und finde heraus,<br>
+<strong>Melde dich an</strong>, um dein Wissen zu testen und finde heraus,<br>
 <strong>ob du ACLs wirklich beherrschst – oder sie dich.</strong>
 </article>
 END;
