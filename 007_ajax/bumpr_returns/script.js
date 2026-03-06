@@ -6,10 +6,14 @@ let ausgabe = document.getElementById('ausgabe')
 eingabefeld.addEventListener('input', evt => {
     let suchtext = eingabefeld.value;
     fetch('server.php?suche=' + encodeURIComponent(suchtext))
-    .then(response => response.json())
+        .then(response => response.json())
         .then(json => {
-            if('antwort' in json) {
-                ausgabe.innerText = JSON.stringify(json);
+            ausgabe.innerHTML = " "
+            if ('antwort' in json) {
+                json.antwort.forEach(e => {
+                    ausgabe.innerHTML = e + "<br>"
+
+                })
             }
         })
 })
