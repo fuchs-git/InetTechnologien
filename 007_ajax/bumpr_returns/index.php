@@ -10,9 +10,13 @@
 <?php
 require("nav.php");
 ?>
-
-Hello World!
-
-
+<main>
+<form action="" method="post">
+    <input type="text" name="suche" id="suche" placeholder="Suche..."><br>
+</form>
+<div id="ausgabe">
+    Hier kommen treffer rein
+</div>
+</main>
 </body>
 </html>
