@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    display: flex;
+    height: 150px;
+    align-items: center;
+    background: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#logo > img {
+    height: 150px;
+}
+
+#menu {
+    padding-right: 30px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: xx-large;
+
+    width: 70%;
+    color: white;
+    text-align: right;
+    justify-content: center;
+}
+
+
+#Kontaktverwaltung {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+#Kontaktverwaltung input {
+    margin: 5px 0px;
+}
+
+#Kontaktverwaltung > hr {
+    border: 1px solid black;
+}
+
+#formular > form > button {
+    margin-top: 20px;
+    margin-right: 10px ;
+}
+#formular {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+#uebersicht {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
