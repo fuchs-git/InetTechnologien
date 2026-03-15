@@ -4,6 +4,7 @@ let buttons = document.querySelectorAll('#formular button');
 let inputs = document.querySelectorAll('#formular input');
 
 buttons[1].addEventListener('click', e => {
+    e.preventDefault()
     inputs.forEach(input => {
         input.value = '';
     })
@@ -24,15 +25,16 @@ inputs.forEach(input => {
 })
 
 buttons[0].addEventListener('click', e => {
+    e.preventDefault()
     let o = {
-        vorname: inputs[0].value,
-        nachname: inputs[1].value,
+        nachname: inputs[0].value,
+        vorname: inputs[1].value,
         strasse: inputs[2].value,
         stadt: inputs[3].value,
         plz: inputs[4].value,
         email: inputs[5].value
     }
-    fetch('server.php?neuer_kontakt=', {
+    fetch('server.php?neuer_kontakt=1', {
         method: 'POST',
         body: JSON.stringify(o)
     })

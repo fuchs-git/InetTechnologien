@@ -19,7 +19,7 @@ require("nav.php");
                 <input type="text" placeholder="Nachname" name="Nachname"><br>
                 <input type="text" placeholder="Vorname" name="Vorname"><br>
                 <input type="text" placeholder="Straße" name="strasse"><br>
-                <input type="text" placeholder="Stradt" name="stradt"><br>
+                <input type="text" placeholder="Stadt" name="stadt"><br>
                 <input type="text" placeholder="PLZ" name="plz"><br>
                 <input type="text" placeholder="EMail" name="email"><br>
                 <button disabled>Übertragen</button><button>Zurücksetzen</button>
