@@ -11,6 +11,7 @@ buttons[1].addEventListener('click', e => {
 })
 
 function check_inputs(){
+    document.querySelector('form').style.background = 'white';
     for (let input of inputs){
         if (input.value === ''){
             buttons[0].disabled = true;
@@ -18,6 +19,7 @@ function check_inputs(){
         }
     }
     buttons[0].disabled = false;
+
 }
 
 inputs.forEach(input => {
@@ -36,7 +38,17 @@ buttons[0].addEventListener('click', e => {
     }
     fetch('server.php?neuer_kontakt=1', {
         method: 'POST',
-        body: JSON.stringify(o)
-    })
+        body: JSON.stringify(o)})
+        .then(response => response.json())
+        .then(json => {
+            if (json === 'Hat geklappt') {
+                document.querySelector('form').style.background = 'green';
+                buttons[1].click();
+            }
+            else {
+                document.querySelector('form').style.background = 'red';
+            }
+        })
+
 
 })
