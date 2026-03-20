@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* ############### Logo und Nav Bereich ############### */
+
+nav {
+    height: 170px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    font-weight: bold;
+    list-style: none;
+    padding: 16px;
+}
+
+.logo > img {
+    height: 150px;
+}
