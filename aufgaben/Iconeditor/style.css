@@ -1,0 +1,14 @@
+
+
+#editor div{
+    width: 15px;
+    height: 15px;
+    border: 1px solid gray;
+}
+
+#editor {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid gray;
+    margin: auto;
+}
