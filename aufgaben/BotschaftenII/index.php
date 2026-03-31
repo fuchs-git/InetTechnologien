@@ -1,5 +1,5 @@
 <?php
-session_name("botschaft");
+session_name('botschaft');
 session_start();
 ?>
 
@@ -16,8 +16,17 @@ session_start();
 <!--Banner ist vorgegeben-->
 <?php
 if (!isset($_SESSION['accept']))
-    require('banner.php');
+    require "banner.html";
 ?>
+<main>
+    <h2>Deutsche Vertretungen im Ausland</h2>
+    <input list="vertretungsliste" name="input" id="input">
+    <datalist id = 'vertretungsliste'>
+        <option value="Test">
+    </datalist>
+
+    <div id="result"></div>
+</main>
 
 <!-- Hier fehlt der Inhalt -->
 
