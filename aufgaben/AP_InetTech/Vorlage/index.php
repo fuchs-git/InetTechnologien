@@ -1,3 +1,9 @@
+<?php
+session_name('periodensystem');
+session_start();
+$_SESSION['sammlung'] = json_decode(file_get_contents("periodensystem.json"), true);
+?>
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -22,6 +28,17 @@
         </tr>
         </thead>
         <tbody id="tbody">
+        <?php
+        foreach ($_SESSION['sammlung'] as $key => $value) {
+            echo "<tr id='" . $key . "'>";
+            echo "<td>" . $value['ordnungszahl'] . "</td>";
+            echo "<td>" . $value["symbol"] . "</td>";
+            echo "<td>" . $value["name"] . "</td>";
+            echo "<td><input id =index_'". $key ."' type='checkbox' " . (isset($value['vorhanden']) && $value['vorhanden'] ?'checked':'') . "></td>";
+            echo "<td id =kosten_". $key ." contenteditable>" . ($value["kosten"] ?? '') ."</td>";
+            echo "</tr>";
+        }
+        ?>
 
         </tbody>
         <tfoot>
