@@ -2,6 +2,9 @@
 session_name('periodensystem');
 session_start();
 $_SESSION['sammlung'] = json_decode(file_get_contents("periodensystem.json"), true);
+if (isset($_SESSION['index'])) {
+    $_GET['informationen'] = $_SESSION['index'];
+}
 ?>
 
 <!DOCTYPE html>

@@ -33,5 +33,37 @@ function neue_kosten(event) {
     }
 }
 
+
 document.querySelector('tbody').addEventListener('change', updateTabelle);
 document.querySelector('tbody').addEventListener('focusout', neue_kosten);
+document.querySelector('tbody').addEventListener('click', e => {
+    document.querySelectorAll('tr').forEach(tr => tr.style.background ='')
+    let tr= e.target.parentElement;
+    if(tr.tagName.toLowerCase() === 'td') {
+        tr = tr.parentElement
+    }
+    tr.style.background = 'lightblue';
+
+    let index = tr.id;
+    fetch('server.php?informationen=' + index)
+    .then(response => response.json())
+    .then(json => {
+        let s = `
+        <img src="${json.bild}" alt="Bild">
+        <h1>${json.name}</h1>
+        <table>
+            <tr><td>Zustand bei 20°C:</td><td>${json.zustand}</td></tr>
+            <tr><td>Dichte:</td><td>${json.dichte}</td></tr>
+            <tr><td>Schmelzpunkt:</td><td>${json.schmelztemperatur}</td></tr>
+            <tr><td>Siedepunkt:</td><td>${json.siedetemperatur}</td></tr>
+        </table>
+        <p>${json.beschreibung}</p>
+        `;
+        console.log(json.bild)
+
+
+
+        document.querySelector('#info').innerHTML = s;
+    })
+
+});
