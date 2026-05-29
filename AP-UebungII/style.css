@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, serif;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+#wetteranzeige {
+    background: #f5f8ff;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+#wetteranzeige #zusammenfassung {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#wetteranzeige #zusammenfassung>div:first-child>div:last-child {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+}
+
+#wetteranzeige #zusammenfassung>div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    text-align: right;
+}
+
+#wetteranzeige #zusammenfassung>div:last-child>div:first-child {
+    font-size: 20px;
+}
+
+#wetteranzeige #stunden {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#wetteranzeige #stunden>div {
+    display: inline-block;
+    width: 70px;
+}
+
+#wetteranzeige #stunden>div>span {
+    color: #0b57d0;
+    font-size: 15px;
+}
+
+#wetteranzeige #frosch img {
+    width: 100%;
+    display: block;
+}
+
+#auswahl_tag .tag {
+    display: inline-block;
+    background: #f5f8ff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 60px;
+    margin: 2px;
+    border: 1px solid white;
+}
+
+#auswahl_tag .tag img {
+    width: 30px;
+    margin: 5px;
+}
+
+#auswahl_tag .selected {
+    border: 1px solid #001d35;
+    background: #e5edff;
+}
+
+.scroll {
+    width: 100%;              /* Oder eine feste Breite wie 400px */
+    overflow-x: auto;         /* Aktiviert horizontales Scrollen bei Bedarf */
+    overflow-y: hidden;       /* Verhindert vertikales Scrollen */
+    white-space: nowrap;      /* Verhindert, dass Kindelemente in die nächste Zeile springen */
+}
+.scroll::-webkit-scrollbar {
+    display: none;
+}
