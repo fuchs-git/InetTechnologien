@@ -34,3 +34,12 @@ elseif (isset($_GET['informationen'])) {
         'beschreibung' => $element['beschreibung'],
     ]);
 }
+
+else if(isset($_GET['load_index'])){
+    if (isset($_SESSION['index'])) {
+        echo json_encode(['status' => 'ok', 'index' => $_SESSION['index']]);
+    }
+    else
+        echo json_encode(['status' => 'false', 'index' => -1]);
+
+}

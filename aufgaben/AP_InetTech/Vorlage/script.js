@@ -60,10 +60,17 @@ document.querySelector('tbody').addEventListener('click', e => {
         <p>${json.beschreibung}</p>
         `;
         console.log(json.bild)
-
-
-
         document.querySelector('#info').innerHTML = s;
     })
 
 });
+
+fetch('server.php?load_index')
+.then(response => response.json())
+.then(json => {
+    if (json.status === 'ok'){
+        document.querySelector('#' + json.index).children[0].click();
+
+        // window.scroll(0,)
+    }
+})
